@@ -1,2 +1,2 @@
 # portfolio
-Portfolio of my multimedia design projects.
+Portfolio website of my multimedia design projects.
