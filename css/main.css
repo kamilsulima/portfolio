@@ -8,12 +8,113 @@ h4,
 h5,
 h6,
 p,
-a
- {
+a {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
   /* background-color: #ededed; */
 }
+
+/* AVATAR */
+
+#avatar {
+  border: 10px solid hsl(0, 0%, 100%, 0.14);
+  border-radius: 50%;
+  position: absolute;
+  width: 200px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#avatar:hover {
+  box-shadow: 0 0 4px 4px hsl(180, 100%, 40%, 0.3);
+}
+
+/* PARTICLE.JS */
+
+canvas {
+  display: block;
+  /* vertical-align: bottom; */
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #131415;
+}
+
+/* PORTFOLIO SECTION */
+
+.w3-row-padding img {
+  margin-bottom: 12px;
+}
+
+.methods {
+  width: 10%;
+}
+
+.imgover {
+  position: relative;
+  /* width: 50%; */
+}
+
+.imgover img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: hsl(0, 0%, 100%, 0.8);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.imgover:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  margin-bottom: 12px;
+}
+
+.portext {
+  color: black;
+  font-size: 0.5rem;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.portext h4 {
+  font-size: 1.5rem;
+}
+
+.portlink {
+  color: black;
+  /* text-decoration: none; */
+  font-size: 1rem;
+}
+
+@media (max-width: 550px) {
+  p,
+  h4 {
+    font-size: 0.5rem;
+  }
+}
+
+/* ICONS */
 
 #icons {
   font-size: 3rem;
@@ -25,18 +126,108 @@ a
   margin: 0;
 }
 
-.portlink {
-  color: black;
-  /* text-decoration: none; */
-  font-size: 1rem;
+#icons1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#margins {
+  margin-bottom: 20px;
+}
+
+/* FILTER BUTTONS */
+
+.column {
+  display: none;
+}
+
+.content {
+  background-color: #fff;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  border: none;
+  outline: 0;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #666;
+}
+
+.btn.active {
+  background-color: #00cdcd;
+  color: #fff;
 }
 
 
-/* .w3-row-padding img {margin-bottom: 12px} */
-/* .bgimg {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('https://ksulima.com/curriculum/img/avatar.png');
-    min-height: 100%;
-} */
+/* SIDEBAR */
+
+.w3-bar-block a:hover {
+    color: #131415;
+
+}
+
+/* TEXT and LINKS */
+
+.text {
+  position: absolute;
+  top: 73%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+  color: #fff;
+  max-width: 100%;
+  padding: 2em 3em;
+  background: rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 0px 2px #131415;
+  font-size: 1rem;
+}
+
+@media (max-width: 550px) {
+  .text {
+      font-size: 0.5rem;
+    }
+  }
+
+.kafka {
+  position: absolute;
+  top: 30%;
+  right: 50%;
+  -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+  color: #fff;
+  max-width: 50%;
+  text-align: center;
+  font-size: 1.3rem;
+  text-shadow: 0px 0px 2px #131415;
+}
+
+#author {
+  text-align: right;
+  font-size: 0.5rem;
+}
+
+h1 {
+  font-size: 2.25em;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+a,
+a:visited {
+  color: #131313;
+  transition: 0.25s;
+}
+
+a:hover,
+a:focus {
+  color: teal;
+}

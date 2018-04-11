@@ -1,0 +1,211 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Damion);
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: normal 16px/1.4 'Lato',sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+}
+
+/*
+.navicon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 34px;
+  height: 30px;
+}
+.navicon:hover {
+  cursor: pointer;
+}
+.navicon:before,
+.navicon i, .navicon:after {
+  content: '';
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  height: 6px;
+}
+.navicon.blue:before,
+.navicon.blue i, .navicon.blue:after {
+  background: #13abdb;
+}
+.navicon i {
+  margin: 6px 0;
+  text-indent: -999em;
+}
+
+.menu {
+  height: 100%;
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 350px;
+  padding: 50px;
+  background: #5e5e5e;
+  color: #fff;
+  display: none;
+  z-index: -1;
+}
+*/
+
+header {
+  /*background: linear-gradient(5deg, #036564, #033649);*/
+  background: #00c290;
+  padding: 100px 50px;
+  margin-bottom: 75px;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 2.5rem;
+}
+header h1 {
+  margin: 0 auto;
+  font-family: 'Lato';
+  font-size: 50px;
+  font-weight: normal;
+  text-align: center;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  line-height: 1;
+  width: 234px;
+}
+
+.page-container {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  background-color: #fff;
+}
+.page-container.show-menu {
+  -webkit-transform: translate(-350px, 0);
+          transform: translate(-350px, 0);
+}
+
+.work {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  max-width: 1200px;
+}
+@media (max-width: 1280px) {
+  .work {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1080px) {
+  .work {
+    max-width: 800px;
+  }
+}
+@media (max-width: 880px) {
+  .work {
+    max-width: 100%;
+  }
+}
+.work li:nth-of-type(even) figure img {
+  float: right;
+}
+.work li:nth-of-type(even) figure figcaption {
+  float: left;
+}
+.work li:nth-of-type(even) figure figcaption > div {
+  margin-right: 50px;
+}
+.work li:nth-of-type(odd) figure img {
+  float: left;
+}
+.work li:nth-of-type(odd) figure figcaption {
+  float: right;
+}
+.work li:nth-of-type(odd) figure figcaption > div {
+  margin-left: 50px;
+}
+.work li:not(:last-of-type) {
+  margin-bottom: 75px;
+}
+.work figure {
+  margin: 0;
+  overflow: hidden;
+  /* cf */
+}
+.work figure img {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #f3f3f3;
+}
+.work figure figcaption {
+  overflow: hidden;
+  /* cf */
+  width: 50%;
+}
+.work figure figcaption > div {
+  padding: 20px 0;
+  border-bottom: 1px solid #f3f3f3;
+}
+.work figure figcaption > div:first-of-type {
+  padding-top: 0;
+}
+.work figure figcaption > div:last-of-type {
+  padding-bottom: 0;
+  border: none;
+}
+.work figure figcaption > div .label {
+  font-weight: 700;
+}
+.work figure figcaption > div .label:after {
+  content: ":";
+}
+.work figure figcaption > div .label, .work figure figcaption > div .value {
+  display: inline-block;
+}
+.work figure figcaption > div a.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 25px;
+  color: #00c290;
+  border-radius: 4px;
+  font-size: 1.2em;
+  background: antiquewhite;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.work figure figcaption > div a.button:hover {
+  background-image: none;
+}
+
+footer {
+  background: #444;
+  color: #fcfcfc;
+  padding: 50px;
+  margin-top: 75px;
+}
+footer .inner {
+  max-width: 502px;
+  text-align: center;
+  margin: 0 auto;
+}
+footer .inner a {
+  color: inherit;
+}
+footer .inner a.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 25px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  font-size: 1.2em;
+  text-decoration: none;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+footer .inner a.button:hover {
+  background-color: #fff;
+  color: #444;
+}
